@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-Mobile Banking</title>
+  <style>
+    /* Gaya Global */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .app-container {
+      max-width: 400px;
+      margin: 0 auto;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+    }
+
+    .notification-btn {
+      background: none;
+      border: none;
+      font-size: 18px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .loan-banner {
+      background-color: #d4edda;
+      text-align: center;
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .loan-banner h2 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .loan-banner p {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+
+    .account-info {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .account-info .balance {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .account-info .account-number {
+      margin: 10px 0 0;
+      font-size: 14px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .action-btn {
+      background-color: #e9ecef;
+      border: 1px solid #ddd;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      flex: 1 1 calc(33.33% - 20px);
+      text-align: center;
+    }
+
+    .transaction-history {
+      padding: 15px;
+      border-top: 1px solid #ddd;
+    }
+
+    .transaction-history h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .transaction-history ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .transaction-history li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .transaction-history .amount {
+      font-weight: bold;
+    }
+
+    .transaction-history .negative {
+      color: red;
+    }
+
+    .transaction-history .positive {
+      color: green;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      border-top: 1px solid #ddd;
+      background-color: #f8f9fa;
+    }
+
+    .nav-btn {
+      background: none;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <header class="header">
+      <h1>e-Mobile Banking</h1>
+      <button class="notification-btn">🔔</button>
+    </header>
+
+    <section class="loan-banner">
+      <h2>Loan Programs</h2>
+      <p>Exclusive low-interest loans available for our loyal customers.</p>
+    </section>
+
+    <section class="account-info">
+      <h3>Saldo Saya</h3>
+      <p class="balance">Rp. 4.000.000</p>
+      <p class="account-number">Nomor Rekening: 2224 5008 9001</p>
+    </section>
+
+    <section class="actions">
+      <button class="action-btn">Transfer</button>
+      <button class="action-btn">Pembayaran</button>
+      <button class="action-btn">Top Up</button>
+      <button class="action-btn">Edit</button>
+      <button class="action-btn">Cicilan</button>
+    </section>
+
+    <section class="transaction-history">
+      <h3>Transaksi Terakhir</h3>
+      <ul>
+        <li>
+          <span>Pembayaran listrik</span>
+          <span class="amount negative">-Rp 189.000</span>
+        </li>
+        <li>
+          <span>Transfer ke Rekening 2224</span>
+          <span class="amount negative">-Rp 1.000.000</span>
+        </li>
+        <li>
+          <span>Gaji Bulanan</span>
+          <span class="amount positive">+Rp 4.000.000</span>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="navigation">
+      <button class="nav-btn">🏠</button>
+      <button class="nav-btn">📷</button>
+      <button class="nav-btn">👤</button>
+    </footer>
+  </div>
+</body>
+</html>
